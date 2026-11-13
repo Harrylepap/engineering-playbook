@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-label="Pyramide des tests : unitaire, intégration, API, bout en bout">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12091F"/>
+      <stop offset="1" stop-color="#22102F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="470" rx="16" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+    <!-- étages, du sommet à la base -->
+    <polygon points="250,40 330,40 380,130 200,130" fill="#FCAF17"/>
+    <polygon points="196,138 384,138 434,228 146,228" fill="#FF7A3D"/>
+    <polygon points="142,236 438,236 488,326 92,326" fill="#FF4F70"/>
+    <polygon points="88,334 492,334 542,424 38,424" fill="#FF2E88"/>
+
+    <g font-weight="700" fill="#12091F" text-anchor="middle">
+      <text x="290" y="92" font-size="15">Bout en bout</text>
+      <text x="290" y="190" font-size="17">API</text>
+      <text x="290" y="288" font-size="18">Intégration</text>
+      <text x="290" y="386" font-size="20">Unitaire</text>
+    </g>
+
+    <!-- questions et conventions -->
+    <g font-size="17" fill="#FFFFFF">
+      <text x="580" y="80">Le parcours complet fonctionne-t-il ?</text>
+      <text x="580" y="178">Le contrat tient-il, vu de l'extérieur ?</text>
+      <text x="580" y="276">Le composant parle-t-il bien à ses voisins ?</text>
+      <text x="580" y="374">Cette règle de gestion est-elle juste ?</text>
+    </g>
+    <g font-size="14" fill="#C9B8DA" font-family="Consolas, Menlo, monospace">
+      <text x="580" y="102">scénarios Gherkin · partenaires simulés</text>
+      <text x="580" y="200">*ApiScenario · boîte noire</text>
+      <text x="580" y="298">*IT · dépendances réelles en conteneurs</text>
+      <text x="580" y="396">*Test · ni réseau ni base</text>
+    </g>
+    <g stroke="#C9B8DA" stroke-opacity="0.35" stroke-dasharray="3 5">
+      <line x1="390" y1="85" x2="565" y2="85"/>
+      <line x1="440" y1="183" x2="565" y2="183"/>
+      <line x1="494" y1="281" x2="565" y2="281"/>
+      <line x1="548" y1="379" x2="565" y2="379"/>
+    </g>
+
+    <!-- axes coût / vitesse -->
+    <g font-size="13" fill="#C9B8DA" letter-spacing="1">
+      <text x="30" y="455">PLUS NOMBREUX · PLUS RAPIDES</text>
+      <text x="970" y="455" text-anchor="end">PLUS RARES · PLUS PROCHES DE L'UTILISATEUR</text>
+    </g>
+  </g>
+</svg>
